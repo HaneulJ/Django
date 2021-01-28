@@ -15,3 +15,11 @@ def exercise2(request):
     else :
          context = None
     return render(request, 'exercise2.html', context)
+
+def product1(request):
+    context = None
+    return render(request, 'product1.html', context)
+
+def basket1(request, picture):
+    context={'picture':picture}
+    return render(request,'basket1.html', context)
